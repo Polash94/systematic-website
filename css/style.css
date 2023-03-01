@@ -1,0 +1,98 @@
+/* ----------------Preset------------------ */
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    background-color: white;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+    float: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------Preset ends------------------ */
+
+/* ----------------Header starts------------------ */
+
+.header-area{
+    width: 100%;
+    clear: both;
+    background-color: #ba2e1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header{
+    background-color:#ba2e1f ;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: center;
+}
+.mini-bar{
+
+}
+.mini-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+}
+.mini-bar ul li{
+    text-decoration: none;
+    color: white;
+    margin-right: 18px;
+    position: relative;
+}
+.mini-bar ul li::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    top: 5px;
+    right: -9px;
+}
+.mini-bar ul li:last-child::after{
+    display: none;
+}
+.mini-bar ul li a{
+    list-style: none;
+text-decoration: none;
+color: white;
+}
+.input-bar{
+    margin: 0;
+    float: left;
+    position: relative;
+}
+.input-bar input{
+    max-width: 300px;
+border: none;
+background-color: white;
+color: black;
+border-radius: 22px;
+padding-left: 11px;
+padding-right: 27px;
+box-sizing: border-box;
+}
+.input-bar button{  
+    border: none;
+    background-color: #ba2e1f;
+}
+.input-bar button svg{
+    height: 23px;
+position: absolute;
+right: 0;
+top: 0;
+}
