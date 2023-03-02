@@ -25,10 +25,11 @@ img{
 .header-area{
     width: 100%;
     clear: both;
-    background-color: #ba2e1f;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50px;
 }
 .top-header{
     background-color:#ba2e1f ;
@@ -92,7 +93,132 @@ box-sizing: border-box;
 }
 .input-bar button svg{
     height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ----------------Header starts------------------ */
+
+.main-header{
+    min-height: 130px;
+
+}
+.main-header-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.main-header-logo{
+    width: 60%;
+
+}
+.main-header-logo{
+
+}
+.main-header-logo img{
+    margin-top: 31px;
+}
+.main-header-icons{
+    width: 30%;
+}
+.main-header-icons ul{
+    margin: 5px;
+    padding: 13px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.main-header-icons ul li a {
+    text-decoration: none;
+    color: black;
+}
+.main-header-icons ul li a i{
+    font-size: 28px;
+}
+
+/* ----------------Header ends------------------ */
+
+/* ----------------Navigation bar starts------------------ */
+
+.navigation-area{
+
+}
+.nav-bar{
+    background-color:#2B2B2B;
+    min-height: 40px;
+    position: relative;
+    z-index: 1;
+}
+.nav-bar::after{
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.nav-bar nav{
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-bar nav ul{
+    list-style: none;
+display: flex;
+justify-content: space-between;
+text-decoration: none;
+width: 100%;
+margin-left: -19px;
+}
+.nav-bar nav ul li{
+    margin-top: 8px;
+    position: relative;
+    
+}
+.nav-bar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-bar nav ul li a:hover
+{
+    color: #ba2e1f;
+}
+.nav-bar nav ul li:hover a{
+    color: #ba2e1f;
+}
+.nav-bar nav ul li:hover ul li a{
+    color:white;
+}
+.nav-bar nav ul li ul li:hover {
+    background-color: white;
+    color: black;
+}
+.nav-bar nav ul li ul li:hover a{
+    background-color: white;
+    color: black;
+}
+.nav-bar nav ul ul{
+    min-height: 107px;
+width: 105px;
 position: absolute;
-right: 0;
-top: 0;
+background-color: #2B2B2B;
+top: 20px;
+left: -99999px;
+display: block;
+padding-right: -18px;
+padding-left: 2px;
+
+}
+#dropdown:hover #dropdown-menu{
+    left: 10px;
 }
